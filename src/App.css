@@ -1,38 +1,240 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+
+body {
+  background-color: black;
+  font-family: "Exo", sans-serif;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  color: white;
+  box-sizing: border-box;
+}
+/*******************HOME PAGE********************* */
+
+.Header > img {
+  width: 10%;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px #ff4655;
+  padding: 2em;
+}
+
+.header-btn {
+  display: flex;
+  gap: 1em;
+}
+.header-btn > input {
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.login {
+  background-color: #ff4655;
+  color: white;
+  width: 100%;
+}
+.collection {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.Input {
+  display: flex;
+  justify-content: center;
+  border: 2px solid seagreen;
+  text-align: center;
+  padding: 2em;
+  flex-direction: column;
+  color: white;
+  position: relative;
+}
+
+.input-field {
+  width: 80%;
+  padding: 1em;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.input-icons {
+  font-size: larger;
+  position: relative;
+  left: 38%;
+  top: 1.8em;
+  color: gray;
+}
+
+.Search {
+  display: grid;
+}
+
+.search-title {
+  width: 75%;
+  margin: auto;
+  border: 2px solid salmon;
+}
+.wrapper {
+  display: grid;
+  width: 75%;
+  border: 2px solid palevioletred;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2em;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.grid-item {
+  border: 2px solid fuchsia;
+  width: 100%;
+  padding: 0 0 15em 0;
+}
+
+/* RESULTS PAGE  */
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ******************  LOGIN PAGE  ****************/
+
+.Login {
+  display: flex;
+  justify-content: center;
+  padding-top: 6em;
+  margin: 0 auto;
+  width: 40%;
+}
+.container-left {
+  width: 50%;
+  height: 470px;
+  border-right: 2px solid #ff4655;
+  background: linear-gradient(#696969, black);
+}
+
+.container-right {
+  width: 50%;
+  height: 470px;
+  background: linear-gradient(black, #696969);
+}
+
+.how-title {
+  border-bottom: #ff4655 solid 5px;
+}
+
+.how-title,
+.login-title {
+  margin-left: 1em;
+  font-size: 25px;
+  width: 45%;
+}
+
+.login-container {
+  margin: 2rem;
+  padding: 1em;
+}
+
+.gamepad2 {
+  width: 9%;
+  padding: 0.5em;
+}
+
+.icon {
+  margin: auto;
+  padding-left: 1em;
+}
+.medium-container {
+  display: flex;
+  font-size: larger;
+}
+.medium-text {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5em;
+  justify-content: center;
+}
+
+.input-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input {
+  width: 80%;
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.connexion-btn {
+  width: 85%;
+  padding: 0.5em;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: #ff4655;
+  color: white;
+  outline: none;
+}
+
+.account-btn {
+  color: white;
+  border: none;
+  cursor: pointer;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.connexion-btn,
+.connexion-btn:hover,
+.connexion-btn:focus {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* ****************  SIGNUP PAGE ***************** */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.passwords-btn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-grow: 2;
 }
 
-.App-link {
-  color: #61dafb;
+.photo-btn {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ************* COLLECTION **************/
+
+.title-collection {
+  text-align: center;
+  border-bottom: #ff4655 solid 5px;
+  width: 15%;
+  margin: auto;
+  padding-top: 2em;
+}
+
+/* ********* RESPONSIVE *** **************** */
+
+@media (min-width: 1440px) {
+  .Login {
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .how-title {
+    width: 50%;
   }
 }
